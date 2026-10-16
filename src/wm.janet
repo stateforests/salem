@@ -269,8 +269,8 @@
   (when seat
     (def w (state :focused))
     (if w
-      (:focus-window seat (w :proxy))
-      (:clear-focus seat)))
+      (:focus-window (seat :proxy) (w :proxy))
+      (:clear-focus (seat :proxy))))
   (:manage-finish (state :wm)))
 
 (defn- render-start []
