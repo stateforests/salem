@@ -6,4 +6,5 @@
 (declare-executable
   :name "salem"
   :entry "src/salem.janet"
+  :deps ["src/wm.janet" "src/layout.janet" "src/config.janet" "src/keysym.janet"]
   :pkg-config-libs ["wayland-client"])
